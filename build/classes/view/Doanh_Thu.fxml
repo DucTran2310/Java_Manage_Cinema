@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="729.0" prefWidth="864.0" style="-fx-background-color: #2d2d2d;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DoanhThuController">
+   <top>
+      <AnchorPane prefHeight="93.0" prefWidth="860.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="78.0" layoutY="28.0" text="Báo Cáo Doanh Thu" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="46.0" fitWidth="57.0" layoutX="14.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/doanh_so.png" />
+               </image>
+            </ImageView>
+            <Line endX="865.0000610351562" endY="92.00001525878906" startY="90.5" stroke="WHITE" />
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="typeReportLabel" layoutX="80.0" layoutY="49.0" text="Doanh Thu theo:" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <BarChart fx:id="MoneyChart" barGap="5.0" layoutX="63.0" layoutY="99.0" prefHeight="485.0" prefWidth="751.0" style="-fx-background-color: white; -fx-background-radius: 6px;" title="Doanh thu rạp phim">
+              <xAxis>
+                <CategoryAxis prefHeight="29.0" prefWidth="694.0" side="BOTTOM" fx:id="x" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis fx:id="y" label="VNĐ" side="LEFT" />
+              </yAxis>
+            </BarChart>
+            <JFXButton fx:id="btnLoad" layoutX="256.0" layoutY="45.0" onAction="#chartLoad" prefHeight="32.0" prefWidth="97.0" ripplerFill="WHITE" style="-fx-cursor: hand; -fx-background-color: white;" styleClass="cursor" text="Ngày" textFill="#0d0000" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

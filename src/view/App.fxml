@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="881.0" prefWidth="1200.0" style="-fx-background-color: #34495e;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AppController">
+   <children>
+      <AnchorPane fx:id="acpApp" prefHeight="80.0" prefWidth="1200.0" style="-fx-background-color: #212121;">
+         <children>
+            <ImageView fitHeight="96.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/User.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="102.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BAM CINESTAR" wrappingWidth="187.13671875">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font>
+            </Text>
+            <JFXButton layoutX="1146.0" layoutY="23.0" prefHeight="34.0" prefWidth="29.0" />
+            <JFXButton fx:id="btnClose" layoutX="1085.0" layoutY="18.0" onAction="#exit" style="-fx-cursor: hand;" text="Thoát" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="31.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/exit.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="acpSlideBar" layoutY="80.0" prefHeight="801.0" prefWidth="336.0" style="-fx-background-color: #d72631;">
+         <children>
+            <AnchorPane prefHeight="72.0" prefWidth="325.0">
+               <children>
+                  <ImageView fx:id="iconThongTinCaNhan" fitHeight="60.0" fitWidth="68.0" layoutX="23.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/User1.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="lbTen" layoutX="89.0" layoutY="1.0" text="Trần Anh Đức" textFill="#fff200">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbChucVu" layoutX="89.0" layoutY="31.0" text="Quản lý" textFill="#fff200">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutY="72.0" minWidth="-Infinity" prefHeight="729.0" prefWidth="336.0">
+               <children>
+                  <JFXButton fx:id="btnDachSachPhim" onAction="#clickDanhSachPhim" prefHeight="68.0" prefWidth="287.0" stylesheets="@../alert/style.css" text="Danh Sách Phim " textAlignment="RIGHT" textFill="#fff200" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font name="Arial" size="20.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fx:id="iconDanhSachPhim" fitHeight="48.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/list_film.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <styleClass>
+                        <String fx:value="menu_bars" />
+                        <String fx:value="cursor_hand" />
+                     </styleClass>
+                     <padding>
+                        <Insets left="-47.0" />
+                     </padding>
+                  </JFXButton>
+                  <JFXButton fx:id="btnThucAn" layoutY="55.0" onAction="#clickThucAn" prefHeight="62.0" prefWidth="336.0" stylesheets="@../alert/style.css" text="Thức ăn &amp; nước uống" textAlignment="RIGHT" textFill="#fff200" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font name="Arial" size="20.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fx:id="iconThucAn" fitHeight="48.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/food.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <styleClass>
+                        <String fx:value="menu_bars" />
+                        <String fx:value="cursor_hand" />
+                     </styleClass>
+                     <padding>
+                        <Insets left="-5.0" />
+                     </padding>
+                  </JFXButton>
+                  <AnchorPane layoutY="229.0" prefHeight="115.0" prefWidth="336.0">
+                     <children>
+                        <JFXButton fx:id="btnNhanVien" onAction="#clickNhanVien" prefHeight="60.0" prefWidth="336.0" stylesheets="@../alert/style.css" text="Nhân Viên" textFill="#fff200">
+                           <font>
+                              <Font name="Arial" size="18.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fx:id="iconNhanVIen" disable="true" fitHeight="48.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/staff.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <styleClass>
+                              <String fx:value="menu_bars" />
+                              <String fx:value="cursor_hand" />
+                           </styleClass>
+                           <padding>
+                              <Insets left="-18.0" />
+                           </padding>
+                        </JFXButton>
+                        <JFXButton fx:id="btnPhanQuyen" layoutY="55.0" onAction="#clickPhanQuyen" prefHeight="60.0" prefWidth="336.0" stylesheets="@../alert/style.css" text="Phân Quyền" textFill="#fff200">
+                           <font>
+                              <Font name="Arial" size="18.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fx:id="iconPhanQuyen" disable="true" fitHeight="48.0" fitWidth="80.0" focusTraversable="true" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/Phan_quyen.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <styleClass>
+                              <String fx:value="menu_bars" />
+                              <String fx:value="cursor_hand" />
+                           </styleClass>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+                  <JFXButton fx:id="btnQuanLyRapPhim" layoutX="-1.0" layoutY="334.0" onAction="#clickQuanLyRapPhim" prefHeight="62.0" prefWidth="337.0" stylesheets="@../alert/style.css" text="Quản lý rạp phim " textAlignment="RIGHT" textFill="#fff200">
+                     <font>
+                        <Font name="Arial" size="20.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fx:id="iconQuanLyRapPhim" fitHeight="48.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/manage_film.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <styleClass>
+                        <String fx:value="menu_bars" />
+                        <String fx:value="cursor_hand" />
+                     </styleClass>
+                     <padding>
+                        <Insets left="-57.0" />
+                     </padding>
+                  </JFXButton>
+                  <AnchorPane layoutY="390.0" prefHeight="277.0" prefWidth="336.0">
+                     <children>
+                        <JFXButton fx:id="btnQuanLyDoAn" onAction="#clickQuanLyDoAn" prefHeight="60.0" prefWidth="336.0" stylesheets="@../alert/style.css" text="Quản lý đồ ăn " textFill="#fff200">
+                           <font>
+                              <Font name="Arial" size="18.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fx:id="iconQuanLyDoAn" fitHeight="48.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/manage_food.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <styleClass>
+                              <String fx:value="menu_bars" />
+                              <String fx:value="cursor_hand" />
+                           </styleClass>
+                           <padding>
+                              <Insets left="7.0" />
+                           </padding>
+                        </JFXButton>
+                        <JFXButton fx:id="btnQuanLyLich" layoutY="55.0" onAction="#clickQuanLyLich" prefHeight="60.0" prefWidth="336.0" stylesheets="@../alert/style.css" text="Quản lý lịch chiếu" textFill="#fff200">
+                           <font>
+                              <Font name="Arial" size="18.0" />
+                           </font>
+                           <styleClass>
+                              <String fx:value="menu_bars" />
+                              <String fx:value="cursor_hand" />
+                           </styleClass>
+                           <graphic>
+                              <ImageView fx:id="iconQuanLyLich" fitHeight="48.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/calendar.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets left="30.0" />
+                           </padding>
+                        </JFXButton>
+                        <JFXButton fx:id="btnQuanLyPhim" layoutY="109.0" onAction="#clickQuanLyPhim" prefHeight="60.0" prefWidth="336.0" stylesheets="@../alert/style.css" text="Quản lý phim" textFill="#fff200">
+                           <font>
+                              <Font name="Arial" size="18.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fx:id="iconQuanLyPhim" fitHeight="48.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/manage_film1.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <styleClass>
+                              <String fx:value="menu_bars" />
+                              <String fx:value="cursor_hand" />
+                           </styleClass>
+                           <padding>
+                              <Insets left="-3.0" />
+                           </padding>
+                        </JFXButton>
+                        <JFXButton fx:id="btnQuanLyPhong" layoutY="163.0" onAction="#clickQuanLyPhong" prefHeight="60.0" prefWidth="336.0" stylesheets="@../alert/style.css" text="Quản lý phòng " textFill="#fff200">
+                           <font>
+                              <Font name="Arial" size="18.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fx:id="iconQuanLyPhong" fitHeight="48.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/theatre.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <styleClass>
+                              <String fx:value="menu_bars" />
+                              <String fx:value="cursor_hand" />
+                           </styleClass>
+                           <padding>
+                              <Insets left="17.0" />
+                           </padding>
+                        </JFXButton>
+                        <JFXButton fx:id="btnQuanLyGhe" layoutY="217.0" onAction="#clickQuanLyGhe" prefHeight="60.0" prefWidth="336.0" stylesheets="@../alert/style.css" text="Quản lý ghế" textFill="#fff200">
+                           <font>
+                              <Font name="Arial" size="18.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fx:id="iconQuanLyGhe" fitHeight="48.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/manage_seat.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <styleClass>
+                              <String fx:value="menu_bars" />
+                              <String fx:value="cursor_hand" />
+                           </styleClass>
+                           <padding>
+                              <Insets left="-12.0" />
+                           </padding>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+                  <Line endX="265.0" endY="1.0" layoutX="71.0" layoutY="-1.0" startX="-71.0" startY="1.0" stroke="WHITE" />
+                  <JFXButton fx:id="btnQuanLyNhanVien" layoutY="167.0" onAction="#clickQuanLyNhanVien" prefHeight="62.0" prefWidth="336.0" stylesheets="@../alert/style.css" text="Quản lý nhân viên" textAlignment="RIGHT" textFill="#fff200">
+                     <font>
+                        <Font name="Arial" size="20.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fx:id="iconQuanLyNhanVien" fitHeight="48.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/manage_people.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <styleClass>
+                        <String fx:value="menu_bars" />
+                        <String fx:value="cursor_hand" />
+                     </styleClass>
+                     <padding>
+                        <Insets left="-42.0" />
+                     </padding>
+                  </JFXButton>
+                  <JFXButton fx:id="btnVe" layoutY="111.0" onAction="#clickVe" prefHeight="60.0" prefWidth="336.0" stylesheets="@../alert/style.css" text="Vé" textFill="#fff200" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font name="Arial" size="20.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="menu_bars" />
+                        <String fx:value="cursor_hand" />
+                     </styleClass>
+                     <padding>
+                        <Insets left="-175.0" />
+                     </padding>
+                     <graphic>
+                        <ImageView disable="true" fitHeight="48.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/ticket.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+            <JFXButton fx:id="btnDoanhThu" layoutY="737.0" onAction="#clickDoanhThu" prefHeight="62.0" prefWidth="336.0" stylesheets="@../alert/style.css" text="Báo cáo doanh thu" textAlignment="RIGHT" textFill="#fff200">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+               <graphic>
+                  <ImageView fx:id="iconDoanhThu" fitHeight="48.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/doanh_so.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <styleClass>
+                  <String fx:value="menu_bars" />
+                  <String fx:value="cursor_hand" />
+               </styleClass>
+               <padding>
+                  <Insets left="-49.0" />
+               </padding>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="336.0" layoutY="80.0" prefHeight="72.0" prefWidth="864.0" style="-fx-background-color: #f9ca24;">
+         <children>
+            <TextField layoutX="613.0" layoutY="13.0" prefHeight="35.0" prefWidth="178.0" promptText="Tìm kiếm" />
+            <JFXButton layoutX="789.0" layoutY="12.0" text=" ">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/search.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <Pane fx:id="paneContainer" layoutX="336.0" layoutY="152.0" prefHeight="729.0" prefWidth="864.0" style="-fx-background-color: white;" />
+   </children>
+</AnchorPane>

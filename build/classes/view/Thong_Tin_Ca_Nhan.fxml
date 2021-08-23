@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="acpThongTinCaNhan" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="729.0" prefWidth="864.0" style="-fx-background-color: #2d2d2d;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ThongTinCaNhanController">
+   <children>
+      <Label layoutX="73.0" layoutY="32.0" prefHeight="35.0" prefWidth="430.0" text="Cập nhật thông tin cá nhân" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="132.0" layoutY="299.0" text="Số điện thoại" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="170.0" layoutY="500.0" text="Mật khẩu" textAlignment="RIGHT" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="209.0" layoutY="249.0" text="Email" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="190.0" layoutY="347.0" prefHeight="32.0" prefWidth="71.0" text="Địa chỉ" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="178.0" layoutY="401.0" text="Giới tính" textAlignment="RIGHT" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="newUserFullName" layoutX="290.0" layoutY="156.0" prefHeight="30.0" prefWidth="250.0" style="-fx-focus-traversable: true;" />
+      <TextField fx:id="newUserName" disable="true" layoutX="290.0" layoutY="204.0" prefHeight="30.0" prefWidth="250.0" />
+      <TextField fx:id="newUserEmail" layoutX="290.0" layoutY="253.0" prefHeight="30.0" prefWidth="250.0" />
+      <TextField fx:id="newUserPhone" layoutX="290.0" layoutY="302.0" prefHeight="30.0" prefWidth="250.0" />
+      <TextField fx:id="newUserAdress" layoutX="290.0" layoutY="350.0" prefHeight="30.0" prefWidth="250.0" />
+      <Label layoutX="84.0" layoutY="551.0" text="Nhập lại mật khẩu" textAlignment="RIGHT" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="129.0" layoutY="200.0" text="Tên tài khoản" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="newUserPassword" layoutX="290.0" layoutY="503.0" prefHeight="30.0" prefWidth="250.0" />
+      <Label layoutX="182.0" layoutY="453.0" text="Chức vụ" textAlignment="RIGHT" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="confirmPassword" layoutX="290.0" layoutY="552.0" prefHeight="30.0" prefWidth="250.0" />
+      <JFXButton fx:id="saveBtn" alignment="CENTER_RIGHT" layoutX="522.0" layoutY="658.0" onAction="#save" prefHeight="40.0" prefWidth="171.0" style="-fx-border-radius: 10px; -fx-background-color: #5CB85C;" styleClass="cursor_hand" stylesheets="@../alert/style.css" text="Lưu thông tin" textAlignment="RIGHT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="24.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/save-file-option.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <Label layoutX="194.0" layoutY="152.0" text="Họ tên" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Line endX="753.0000610351562" layoutX="111.0" layoutY="91.0" startX="-111.0" stroke="WHITE" />
+      <Label fx:id="dangerLabel" layoutX="319.0" layoutY="588.0" text="Mật khẩu không khớp!" textFill="RED" visible="false">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="dangerIcon" fitHeight="22.0" fitWidth="21.0" layoutX="291.0" layoutY="589.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../../../JavaCinema/src/Image/alert.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="newUserAdress1" disable="true" layoutX="289.0" layoutY="402.0" prefHeight="30.0" prefWidth="250.0" />
+      <TextField fx:id="newUserAdress2" disable="true" layoutX="288.0" layoutY="454.0" prefHeight="30.0" prefWidth="250.0" />
+      <ImageView fitHeight="40.0" fitWidth="52.0" layoutX="20.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/User1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="backIcon" fitHeight="40.0" fitWidth="41.0" layoutX="809.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/back%20(1).png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="cancelBtn" alignment="CENTER_RIGHT" layoutX="704.0" layoutY="658.0" onAction="#cancel" prefHeight="40.0" prefWidth="117.0" style="-fx-border-radius: 10px; -fx-background-color: #d72631;" styleClass="cursor_hand" stylesheets="@../alert/style.css" text="Hủy bỏ" textAlignment="RIGHT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="26.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/trash.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

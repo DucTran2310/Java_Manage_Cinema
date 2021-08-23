@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="acpChinhSuaPhim" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="729.0" prefWidth="864.0" style="-fx-background-color: #2d2d2d;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ChinhSuaPhimController">
+   <children>
+      <Label fx:id="themHoacChinhSuaLabel" layoutX="74.0" layoutY="30.0" prefHeight="35.0" prefWidth="303.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="50.0" fitWidth="57.0" layoutX="24.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/list_film.png" />
+         </image>
+      </ImageView>
+      <Line endX="763.0" layoutX="101.0" layoutY="78.0" startX="-100.0" stroke="#fcfcfc" />
+      <Label layoutX="102.0" layoutY="245.0" text="Thông tin phim:" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="80.0" layoutY="182.0" text="Thời lượng (phút):" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfNameFilm" layoutX="299.0" layoutY="126.0" prefHeight="30.0" prefWidth="371.0" />
+      <TextField fx:id="tfTimeFilm" layoutX="299.0" layoutY="184.0" prefHeight="30.0" prefWidth="370.0" />
+      <Label layoutX="165.0" layoutY="123.0" text="Tên phim:" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="173.0" layoutY="430.0" text="Thể loại:" textAlignment="RIGHT" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnSave" alignment="CENTER_RIGHT" layoutX="497.0" layoutY="636.0" onAction="#save" prefHeight="40.0" prefWidth="176.0" style="-fx-border-radius: 10px; -fx-background-color: #5CB85C;" styleClass="cursor_hand" stylesheets="@../alert/style.css" text="Lưu thông tin" textAlignment="RIGHT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="24.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/save-file-option.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="btnCancle" alignment="CENTER_RIGHT" cancelButton="true" layoutX="688.0" layoutY="636.0" onAction="#cancle" prefHeight="40.0" prefWidth="116.0" style="-fx-border-radius: 10px; -fx-background-color: #d72631;" styleClass="cursor_hand" stylesheets="@../alert/style.css" text="Hủy bỏ" textAlignment="RIGHT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/trash.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXComboBox fx:id="newFilmTitle" layoutX="299.0" layoutY="430.0" prefHeight="30.0" prefWidth="372.0" style="-fx-cursor: hand;" unFocusColor="WHITE" />
+      <Label layoutX="40.0" layoutY="491.0" text="Đường dẫn hình ảnh:" textAlignment="RIGHT" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfLinkImageFilm" layoutX="299.0" layoutY="493.0" prefHeight="30.0" prefWidth="370.0" promptText="Copy đường dẫn hoặc chọn file ảnh" />
+      <TextArea fx:id="tfInformationFilm" layoutX="299.0" layoutY="245.0" prefHeight="158.0" prefWidth="370.0" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextArea>
+      <JFXButton fx:id="btnBrowse" alignment="CENTER_RIGHT" layoutX="354.0" layoutY="636.0" onAction="#browse" prefHeight="40.0" prefWidth="131.0" style="-fx-border-radius: 10px; -fx-background-color: #F7D73A;" styleClass="cursor_hand" stylesheets="@../alert/style.css" text="Chọn file" textAlignment="RIGHT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="24.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/save-file-option.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

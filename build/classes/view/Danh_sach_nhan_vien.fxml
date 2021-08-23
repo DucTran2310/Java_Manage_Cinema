@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="acpDanhSachNhanVien" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="729.0" prefWidth="864.0" style="-fx-background-color: #2d2d2d;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DanhSachNhanVienController">
+   <children>
+      <TableView fx:id="nhanVienTable" layoutX="53.0" layoutY="72.0" prefHeight="554.0" prefWidth="773.0">
+         <columns>
+            <TableColumn fx:id="clID" prefWidth="43.0" styleClass="ColumnCenter" text="ID" />
+            <TableColumn fx:id="clName" prefWidth="143.0" text="Họ tên" />
+            <TableColumn fx:id="clEmaiil" prefWidth="144.0" text="Email" />
+            <TableColumn fx:id="clPhone" prefWidth="121.0" text="Số điện thoại" />
+            <TableColumn fx:id="clPosition" prefWidth="105.0" text="Tên chức vụ" />
+            <TableColumn fx:id="clAddress" minWidth="0.0" prefWidth="107.0" text="Dia Chi" />
+            <TableColumn fx:id="clActivated" editable="false" prefWidth="109.0" styleClass="ColumnCenter" text="Hoạt động" />
+         </columns>
+      </TableView>
+      <JFXButton fx:id="saveBtn" alignment="CENTER_RIGHT" layoutX="220.0" layoutY="654.0" onAction="#createUser" prefHeight="33.0" prefWidth="186.0" style="-fx-border-radius: 10px; -fx-background-color: #5CB85C;" styleClass="cursor_hand" stylesheets="@../alert/style.css" text="Thêm tài khoản" textAlignment="RIGHT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fx:id="addIcon" fitHeight="25.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/addFa.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="btnChangeStatus" alignment="CENTER_RIGHT" layoutX="675.0" layoutY="654.0" onAction="#changeStatusUser" prefHeight="39.0" prefWidth="151.0" style="-fx-border-radius: 10px; -fx-background-color: #b62b27;" styleClass="cursor_hand" stylesheets="@../alert/style.css" text="Hoạt động" textAlignment="RIGHT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fx:id="activeIcon" fitHeight="25.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/gear.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="editUserBtn" alignment="CENTER_RIGHT" layoutX="419.0" layoutY="655.0" onAction="#editUser" prefHeight="33.0" prefWidth="143.0" style="-fx-border-radius: 10px; -fx-background-color: #F7D73A;" styleClass="cursor_hand" stylesheets="@../alert/style.css" text="Chỉnh sửa" textAlignment="RIGHT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fx:id="repairIcon" fitHeight="25.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/settings.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <Label layoutX="53.0" layoutY="24.0" prefHeight="35.0" prefWidth="334.0" text="Danh sách nhân viên" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="33.0" fitWidth="43.0" layoutX="15.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/list.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="deleteBtn1" alignment="CENTER_RIGHT" layoutX="577.0" layoutY="655.0" onAction="#delete" prefHeight="39.0" prefWidth="87.0" style="-fx-border-radius: 10px; -fx-background-color: red;" styleClass="cursor_hand" stylesheets="@../alert/style.css" text="Xóa" textAlignment="RIGHT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fx:id="deleteIcon" fitHeight="25.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/trash.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

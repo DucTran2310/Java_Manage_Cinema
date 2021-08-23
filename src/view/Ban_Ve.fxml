@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="acpBanVe" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="729.0" prefWidth="864.0" style="-fx-background-color: #2d2d2d;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.BanVeController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff" height="53.0" layoutX="126.0" layoutY="14.0" stroke="WHITE" strokeType="INSIDE" width="613.0" />
+      <Label alignment="TOP_CENTER" layoutX="125.0" layoutY="14.0" prefHeight="53.0" prefWidth="613.0" text="Màn hình" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="39.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="gpnGhe" layoutX="44.0" layoutY="83.0" prefHeight="406.0" prefWidth="783.0">
+         <children>
+            <Button fx:id="A1" layoutX="86.0" layoutY="14.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="54.0" style="-fx-border-color: #4cd137; -fx-border-width: 5;" text="A1" />
+            <Button fx:id="A2" layoutX="149.0" layoutY="14.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="54.0" style="-fx-border-color: #4cd137; -fx-border-width: 5;" text="A2" />
+            <Button fx:id="A3" layoutX="213.0" layoutY="14.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="54.0" style="-fx-border-color: #4cd137; -fx-border-width: 5;" text="A3" />
+            <Button fx:id="A4" layoutX="276.0" layoutY="14.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="54.0" style="-fx-border-color: #4cd137; -fx-border-width: 5;" text="A4" />
+            <Button fx:id="A5" layoutX="339.0" layoutY="14.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="54.0" style="-fx-border-color: #4cd137; -fx-border-width: 5;" text="A5" />
+            <Button fx:id="A6" layoutX="402.0" layoutY="14.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="54.0" style="-fx-border-color: #4cd137; -fx-border-width: 5;" text="A6" />
+            <Button fx:id="A7" layoutX="466.0" layoutY="14.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="54.0" style="-fx-border-color: #4cd137; -fx-border-width: 5;" text="A7" />
+            <Button fx:id="A8" layoutX="529.0" layoutY="14.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="54.0" style="-fx-border-color: #4cd137; -fx-border-width: 5;" text="A8" />
+            <Button fx:id="A9" layoutX="594.0" layoutY="14.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="54.0" style="-fx-border-color: #4cd137; -fx-border-width: 5;" text="A9" />
+            <Button fx:id="A10" layoutX="657.0" layoutY="14.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="54.0" style="-fx-border-color: #4cd137; -fx-border-width: 5;" text="A10" />
+            <Button fx:id="A11" layoutX="86.0" layoutY="74.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="54.0" style="-fx-border-color: #4cd137; -fx-border-width: 5;" text="A11" />
+            <Button fx:id="A12" layoutX="149.0" layoutY="74.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="54.0" style="-fx-border-color: #4cd137; -fx-border-width: 5;" text="A12" />
+            <Button fx:id="A13" layoutX="213.0" layoutY="74.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="54.0" style="-fx-border-color: #4cd137; -fx-border-width: 5;" text="A13" />
+            <Button fx:id="A14" layoutX="276.0" layoutY="74.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="54.0" style="-fx-border-color: #4cd137; -fx-border-width: 5;" text="A14" />
+            <Button fx:id="A15" layoutX="339.0" layoutY="74.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="54.0" style="-fx-border-color: #4cd137; -fx-border-width: 5;" text="A15" />
+            <Button fx:id="A16" layoutX="402.0" layoutY="74.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="54.0" style="-fx-border-color: #4cd137; -fx-border-width: 5;" text="A16" />
+            <Button fx:id="A17" layoutX="466.0" layoutY="74.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="54.0" style="-fx-border-color: #4cd137; -fx-border-width: 5;" text="A17" />
+            <Button fx:id="A18" layoutX="529.0" layoutY="74.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="54.0" style="-fx-border-color: #4cd137; -fx-border-width: 5;" text="A18" />
+            <Button fx:id="A19" layoutX="594.0" layoutY="74.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="54.0" style="-fx-border-color: #4cd137; -fx-border-width: 5;" text="A19" />
+            <Button fx:id="A20" layoutX="657.0" layoutY="74.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="54.0" style="-fx-border-color: #4cd137; -fx-border-width: 5;" text="A20" />
+            <Button fx:id="C1" layoutX="86.0" layoutY="132.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="54.0" style="-fx-border-color: #b05a53; -fx-border-width: 5;" text="C1" />
+            <Button fx:id="C2" layoutX="149.0" layoutY="132.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="54.0" style="-fx-border-color: #b05a53; -fx-border-width: 5;" text="C2" />
+            <Button fx:id="C3" layoutX="213.0" layoutY="132.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="54.0" style="-fx-border-color: #b05a53; -fx-border-width: 5;" text="C3" />
+            <Button fx:id="C4" layoutX="276.0" layoutY="132.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="54.0" style="-fx-border-color: #b05a53; -fx-border-width: 5;" text="C4" />
+            <Button fx:id="C5" layoutX="339.0" layoutY="132.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="54.0" style="-fx-border-color: #b05a53; -fx-border-width: 5;" text="C5" />
+            <Button fx:id="C6" layoutX="402.0" layoutY="132.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="54.0" style="-fx-border-color: #b05a53; -fx-border-width: 5;" text="C6" />
+            <Button fx:id="C8" layoutX="529.0" layoutY="133.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="54.0" style="-fx-border-color: #b05a53; -fx-border-width: 5;" text="C8" />
+            <Button fx:id="C9" layoutX="594.0" layoutY="133.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="54.0" style="-fx-border-color: #b05a53; -fx-border-width: 5;" text="C9" />
+            <Button fx:id="C10" layoutX="657.0" layoutY="133.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="54.0" style="-fx-border-color: #b05a53; -fx-border-width: 5;" text="C10" />
+            <Button fx:id="C11" layoutX="86.0" layoutY="192.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="54.0" style="-fx-border-color: #b05a53; -fx-border-width: 5;" text="C11" />
+            <Button fx:id="C12" layoutX="149.0" layoutY="192.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="54.0" style="-fx-border-color: #b05a53; -fx-border-width: 5;" text="C12" />
+            <Button fx:id="C13" layoutX="213.0" layoutY="192.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="54.0" style="-fx-border-color: #b05a53; -fx-border-width: 5;" text="C13" />
+            <Button fx:id="C14" layoutX="276.0" layoutY="192.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="54.0" style="-fx-border-color: #b05a53; -fx-border-width: 5;" text="C14" />
+            <Button fx:id="C15" layoutX="339.0" layoutY="192.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="54.0" style="-fx-border-color: #b05a53; -fx-border-width: 5;" text="C15" />
+            <Button fx:id="C16" layoutX="402.0" layoutY="192.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="54.0" style="-fx-border-color: #b05a53; -fx-border-width: 5;" text="C16" />
+            <Button fx:id="C17" layoutX="466.0" layoutY="193.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="54.0" style="-fx-border-color: #b05a53; -fx-border-width: 5;" text="C17" />
+            <Button fx:id="C18" layoutX="529.0" layoutY="193.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="54.0" style="-fx-border-color: #b05a53; -fx-border-width: 5;" text="C18" />
+            <Button fx:id="C19" layoutX="594.0" layoutY="193.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="54.0" style="-fx-border-color: #b05a53; -fx-border-width: 5;" text="C19" />
+            <Button fx:id="C20" layoutX="657.0" layoutY="193.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="54.0" style="-fx-border-color: #b05a53; -fx-border-width: 5;" text="C20" />
+            <Button fx:id="C7" layoutX="466.0" layoutY="132.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="54.0" style="-fx-border-color: #b05a53; -fx-border-width: 5;" text="C7" />
+            <Button fx:id="C21" layoutX="86.0" layoutY="251.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="54.0" style="-fx-border-color: #b05a53; -fx-border-width: 5;" text="C21" />
+            <Button fx:id="C22" layoutX="149.0" layoutY="251.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="54.0" style="-fx-border-color: #b05a53; -fx-border-width: 5;" text="C22" />
+            <Button fx:id="C23" layoutX="213.0" layoutY="251.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="54.0" style="-fx-border-color: #b05a53; -fx-border-width: 5;" text="C23" />
+            <Button fx:id="C24" layoutX="276.0" layoutY="251.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="54.0" style="-fx-border-color: #b05a53; -fx-border-width: 5;" text="C24" />
+            <Button fx:id="C25" layoutX="339.0" layoutY="251.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="54.0" style="-fx-border-color: #b05a53; -fx-border-width: 5;" text="C25" />
+            <Button fx:id="C26" layoutX="402.0" layoutY="252.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="54.0" style="-fx-border-color: #b05a53; -fx-border-width: 5;" text="C26" />
+            <Button fx:id="C28" layoutX="529.0" layoutY="252.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="54.0" style="-fx-border-color: #b05a53; -fx-border-width: 5;" text="C28" />
+            <Button fx:id="C29" layoutX="594.0" layoutY="252.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="54.0" style="-fx-border-color: #b05a53; -fx-border-width: 5;" text="C29" />
+            <Button fx:id="C30" layoutX="657.0" layoutY="252.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="54.0" style="-fx-border-color: #b05a53; -fx-border-width: 5;" text="C30" />
+            <Button fx:id="F1" layoutX="86.0" layoutY="311.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="116.0" style="-fx-background-color: #f961af;" text="F1" />
+            <Button fx:id="F3" layoutX="213.0" layoutY="311.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="116.0" style="-fx-background-color: #f961af;" text="F3" />
+            <Button fx:id="F5" layoutX="339.0" layoutY="311.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="116.0" style="-fx-background-color: #f961af;" text="F5" />
+            <Button fx:id="F7" layoutX="466.0" layoutY="311.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="116.0" style="-fx-background-color: #f961af;" text="F7" />
+            <Button fx:id="F9" layoutX="594.0" layoutY="311.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="116.0" style="-fx-background-color: #f961af;" text="F9" />
+            <Button fx:id="C27" layoutX="466.0" layoutY="252.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="54.0" style="-fx-border-color: #b05a53; -fx-border-width: 5;" text="C27" />
+         </children></AnchorPane>
+      <Label layoutX="115.0" layoutY="509.0" text="Đang chọn" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
+      <Line endX="-2.0" endY="-4.0" layoutX="234.0" layoutY="508.0" startX="-2.0" startY="103.0" stroke="WHITE" />
+      <AnchorPane layoutX="240.0" layoutY="550.0" prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: #fff; -fx-border-color: #b05a53; -fx-border-width: 4;" />
+      <AnchorPane layoutX="240.0" layoutY="587.0" prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: #f961af;" />
+      <Label layoutX="275.0" layoutY="510.0" text="Thường" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="275.0" layoutY="552.0" text="VIP" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="275.0" layoutY="589.0" text="Sweetbox" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="240.0" layoutY="508.0" prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: #fff; -fx-border-color: #4cd137; -fx-border-width: 4;" />
+      <AnchorPane layoutX="78.0" layoutY="507.0" prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: #ad1510;" />
+      <AnchorPane fx:id="acpChinhSua" layoutX="481.0" layoutY="503.0" prefHeight="135.0" prefWidth="346.0" style="-fx-background-color: #aaaa;">
+         <children>
+            <Label layoutX="15.0" layoutY="79.0" text="Ngày chiếu:" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="17.0" layoutY="11.0" text="Tên Phòng:" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <JFXComboBox fx:id="comBoBoxNgayChieu" layoutX="120.0" layoutY="72.0" prefHeight="33.0" prefWidth="219.0" style="-fx-background-color: white;" />
+            <JFXComboBox fx:id="comBoBoxTenPhong" layoutX="120.0" layoutY="8.0" prefHeight="33.0" prefWidth="188.0" style="-fx-background-color: white;" />
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="btnDatVe" layoutX="747.0" layoutY="658.0" onAction="#clickDatVe" style="-fx-background-color: #B53471;" styleClass="cursor_hand" stylesheets="@../alert/style.css" text="Đặt Vé" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </JFXButton>
+      <ImageView fx:id="backIcon" fitHeight="34.0" fitWidth="28.0" layoutX="813.0" layoutY="27.0" onMouseClicked="#back" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+         <image>
+            <Image url="@../image/back%20(1).png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="78.0" layoutY="545.0" prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: #602321;" />
+      <Label layoutX="115.0" layoutY="547.0" text="Đã đặt" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="acpQuanLyLichPhim" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="729.0" prefWidth="864.0" style="-fx-background-color: #2d2d2d;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.QuanLyLichPhimController">
+   <children>
+      <Label fx:id="themHoacChinhSuaLabel" layoutX="53.0" layoutY="24.0" prefHeight="35.0" prefWidth="334.0" text="Quản Lý lịch phim" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="addBtn" alignment="CENTER_RIGHT" layoutX="380.0" layoutY="657.0" onAction="#create" prefHeight="39.0" prefWidth="184.0" style="-fx-border-radius: 10px; -fx-background-color: #5CB85C;" styleClass="cursor_hand" stylesheets="@../alert/style.css" text="Thêm lịch phim" textAlignment="RIGHT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fx:id="addIcon" fitHeight="25.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/addFa.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <TableView fx:id="lichPhimTable" layoutX="53.0" layoutY="72.0" prefHeight="571.0" prefWidth="789.0">
+        <columns>
+          <TableColumn fx:id="clMaLich" prefWidth="65.0" text="MÃ LỊCH " />
+          <TableColumn fx:id="clTenPhim" prefWidth="219.0" text="TÊN PHIM" />
+            <TableColumn fx:id="clTenPhong" prefWidth="124.0" text="TÊN PHÒNG" />
+            <TableColumn fx:id="clNgayChieu" prefWidth="135.0" text="NGÀY CHIẾU" />
+            <TableColumn prefWidth="245.0" text="THỜI GIAN ">
+               <columns>
+                  <TableColumn fx:id="clThoiGianBatDau" prefWidth="125.0" text=" BAT DAU" />
+                  <TableColumn fx:id="clThoiGianKetThuc" prefWidth="120.0" text="KET THUC" />
+               </columns></TableColumn>
+        </columns>
+      </TableView>
+      <JFXButton fx:id="editBtn" alignment="CENTER_RIGHT" layoutX="575.0" layoutY="657.0" onAction="#edit" prefHeight="35.0" prefWidth="152.0" style="-fx-border-radius: 10px; -fx-background-color: #F7D73A;" styleClass="cursor_hand" stylesheets="@../alert/style.css" text="Chỉnh sửa" textAlignment="RIGHT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fx:id="repairIcon" fitHeight="25.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/settings.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="deleteBtn" alignment="CENTER_RIGHT" layoutX="738.0" layoutY="657.0" onAction="#delete" prefHeight="35.0" prefWidth="88.0" style="-fx-border-radius: 10px; -fx-background-color: red;" styleClass="cursor_hand" stylesheets="@../alert/style.css" text="Xóa" textAlignment="RIGHT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fx:id="deleteIcon" fitHeight="25.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/trash.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <ImageView fitHeight="33.0" fitWidth="43.0" layoutX="15.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/schedule.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

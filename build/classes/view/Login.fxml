@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="350.0" style="-fx-background-color: #bc1229;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="341.0" fitWidth="348.0" layoutX="5.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,2.2), 10, 0,0,0);">
+               <image>
+                  <Image url="@../image/logo.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="500.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="userName" layoutX="112.0" layoutY="176.0" prefHeight="35.0" prefWidth="195.0" promptText="Tài khoản" style="-fx-background-color: transparent; -fx-border-color: #bc1229; -fx-border-width: 0px 0px 2px 0px;" />
+            <PasswordField fx:id="pass" layoutX="112.0" layoutY="255.0" prefHeight="35.0" prefWidth="195.0" promptText="Mật khẩu" style="-fx-background-color: transparent; -fx-border-color: #bc1229; -fx-border-width: 0px 0px 2px 0px;" />
+            <ImageView fitHeight="31.0" fitWidth="32.0" layoutX="76.0" layoutY="178.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/person.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="80.0" layoutY="261.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/password.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="101.0" fitWidth="97.0" layoutX="148.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/User.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="Login" layoutX="133.0" layoutY="335.0" onAction="#clickLogin" prefHeight="32.0" prefWidth="127.0" style="-fx-background-color: #bc1229;" styleClass="cursor_hand" stylesheets="@../alert/style.css" text="Đăng nhập" textFill="WHITE" />
+            <JFXButton fx:id="exit" layoutX="305.0" layoutY="7.0" onAction="#clickExit" prefHeight="30.0" prefWidth="22.0" text="." textFill="#111111">
+               <graphic>
+                  <ImageView fitHeight="22.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/cancel.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <Label fx:id="lbThongBao" layoutX="120.0" layoutY="388.0" prefHeight="31.0" prefWidth="168.0" textFill="#1330d3" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="acpLoaiGhe" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="729.0" prefWidth="864.0" style="-fx-background-color: #2d2d2d;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DanhSachLoaiGheController">
+   <children>
+      <Label layoutX="53.0" layoutY="24.0" prefHeight="35.0" prefWidth="334.0" text="Danh sách loại ghế" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
+      <TableView fx:id="LoaiGheTable" layoutX="53.0" layoutY="72.0" prefHeight="561.0" prefWidth="773.0">
+         <columns>
+            <TableColumn fx:id="clID" prefWidth="43.0" styleClass="ColumnCenter" text="ID" />
+            <TableColumn fx:id="clTenLoaiGhe" prefWidth="458.4000244140625" text="Tên loại ghế" />
+            <TableColumn fx:id="clGia" prefWidth="291.0" styleClass="ColumnCenter" text="Giá (VNĐ)" />
+         </columns>
+      </TableView>
+      <ImageView fitHeight="33.0" fitWidth="43.0" layoutX="15.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/manage_seat.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="ChinhSuaLoaiGhe" alignment="CENTER_RIGHT" layoutX="681.0" layoutY="665.0" onAction="#clickChinhSuaLoaiGhe" prefHeight="40.0" prefWidth="145.0" style="-fx-border-radius: 10px; -fx-background-color: #F7D73A; -fx-cursor: hand;" text="Chỉnh sửa" textAlignment="RIGHT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="29.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/settings.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

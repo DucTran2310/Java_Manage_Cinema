@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="acpDanhSachPhim" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="729.0" prefWidth="864.0" style="-fx-background-color: #2d2d2d;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DanhSachPhimController">
+   <children>
+      <TableView fx:id="filmTable" layoutX="53.0" layoutY="72.0" prefHeight="564.0" prefWidth="773.0">
+         <columns>
+            <TableColumn fx:id="clID" prefWidth="32.000030517578125" styleClass="ColumnCenter" text="ID" />
+            <TableColumn fx:id="clTenPhim" prefWidth="185.60000610351562" text="Tên phim" />
+            <TableColumn prefWidth="72.0" text="Thời lượng">
+               <columns>
+                  <TableColumn fx:id="clThoiLuong1" prefWidth="75.0" styleClass="ColumnCenter" text="(Phút)" />
+               </columns>
+            </TableColumn>
+            <TableColumn fx:id="clThongTinPhim" prefWidth="204.0" text="Thông tin phim" />
+            <TableColumn prefWidth="274.0" text="Thời gian">
+               <columns>
+                  <TableColumn fx:id="clThoiGianKhoiTao" prefWidth="135.0" text="Khởi tạo" />
+                  <TableColumn fx:id="clThoiGianCapNhat" prefWidth="139.0" text="Cập nhật" />
+               </columns>
+            </TableColumn>
+         </columns>
+      </TableView>
+      <JFXButton fx:id="createBtn" alignment="CENTER_RIGHT" layoutX="432.0" layoutY="660.0" onAction="#create" prefHeight="33.0" prefWidth="151.0" style="-fx-border-radius: 10px; -fx-background-color: #5CB85C;" styleClass="cursor_hand" stylesheets="@../alert/style.css" text="Thêm phim" textAlignment="RIGHT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fx:id="addIcon" fitHeight="25.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/addFa.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="deleteBtn" alignment="CENTER_RIGHT" layoutX="739.0" layoutY="660.0" onAction="#delete" prefHeight="39.0" prefWidth="87.0" style="-fx-border-radius: 10px; -fx-background-color: red;" styleClass="cursor_hand" stylesheets="@../alert/style.css" text="Xóa" textAlignment="RIGHT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fx:id="deleteIcon" fitHeight="25.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/trash.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="repairBtn" alignment="CENTER_RIGHT" layoutX="590.0" layoutY="660.0" onAction="#repair" prefHeight="33.0" prefWidth="142.0" style="-fx-border-radius: 10px; -fx-background-color: #F7D73A;" styleClass="cursor_hand" stylesheets="@../alert/style.css" text="Chỉnh sửa" textAlignment="RIGHT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fx:id="repairIcon" fitHeight="25.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/settings.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <ImageView fitHeight="33.0" fitWidth="43.0" layoutX="15.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/list_film1.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="53.0" layoutY="24.0" prefHeight="33.0" prefWidth="203.0" text="Danh Sách Phim" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

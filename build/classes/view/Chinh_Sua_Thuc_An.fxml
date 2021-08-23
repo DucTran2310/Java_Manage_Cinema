@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="acpChinhSuaThucAn" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="729.0" prefWidth="864.0" style="-fx-background-color: #2d2d2d;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ChinhSuaThucAnController">
+   <children>
+      <Label fx:id="themHoacChinhSuaLabel" layoutX="73.0" layoutY="37.0" prefHeight="27.0" prefWidth="332.0" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="40.0" fitWidth="39.0" layoutX="26.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/popcorn.png" />
+         </image>
+      </ImageView>
+      <Line endX="763.0" layoutX="101.0" layoutY="85.0" startX="-100.0" stroke="WHITE" />
+      <Label layoutX="185.0" layoutY="301.0" text="Giá tiền:" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="142.0" layoutY="225.0" text="Tên thức ăn:" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfTenThucAn" layoutX="297.0" layoutY="225.0" prefHeight="35.0" prefWidth="350.0" />
+      <TextField fx:id="tfGiaThucAn" layoutX="297.0" layoutY="301.0" prefHeight="35.0" prefWidth="350.0" />
+      <JFXButton fx:id="btnClear" alignment="CENTER_RIGHT" layoutX="542.0" layoutY="648.0" onAction="#handleClear" prefHeight="40.0" prefWidth="130.0" style="-fx-border-radius: 10px; -fx-background-color: gold;" styleClass="cursor_hand" stylesheets="@../alert/style.css" text="Clear all" textAlignment="RIGHT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="24.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/save-file-option.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="cancelBtn" alignment="CENTER_RIGHT" cancelButton="true" layoutX="686.0" layoutY="648.0" onAction="#cancel" prefHeight="40.0" prefWidth="120.0" style="-fx-border-radius: 10px; -fx-background-color: #d72631;" styleClass="cursor_hand" stylesheets="@../alert/style.css" text="Hủy bỏ" textAlignment="RIGHT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="26.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/trash.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="btnThemThucAn" alignment="CENTER_RIGHT" layoutX="369.0" layoutY="648.0" onAction="#handleThemTHucAn" prefHeight="40.0" prefWidth="159.0" style="-fx-border-radius: 10px; -fx-background-color: #5CB85C;" styleClass="cursor_hand" stylesheets="@../alert/style.css" text="Lưu thông tin" textAlignment="RIGHT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="24.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/save-file-option.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

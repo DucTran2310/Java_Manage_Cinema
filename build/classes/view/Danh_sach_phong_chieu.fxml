@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="acpDanhSachPhongChieu" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="729.0" prefWidth="864.0" style="-fx-background-color: #2d2d2d;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DanhSachPhongChieuController">
+   <children>
+      <JFXButton fx:id="btnRepairRoom" alignment="CENTER_RIGHT" layoutX="688.0" layoutY="656.0" onAction="#chinhSuaPhong" prefHeight="40.0" prefWidth="138.0" style="-fx-border-radius: 10px; -fx-background-color: #F7D73A;" styleClass="cursor_hand" stylesheets="@../alert/style.css" text="Chỉnh sửa" textAlignment="RIGHT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fx:id="repairIcon" fitHeight="26.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/settings.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <Label layoutX="53.0" layoutY="24.0" prefHeight="35.0" prefWidth="334.0" text="Danh sách phòng chiếu" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="33.0" fitWidth="43.0" layoutX="15.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/theatre1.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tbvDanhSachPhongChieu" layoutX="53.0" layoutY="72.0" prefHeight="559.0" prefWidth="773.0">
+         <columns>
+            <TableColumn fx:id="clID" prefWidth="77.60000610351562" styleClass="ColumnCenter" text="ID" />
+            <TableColumn fx:id="clTenPhong" prefWidth="377.6000061035156" text="Tên phòng" />
+            <TableColumn fx:id="clSoGheDoc" prefWidth="143.0" styleClass="ColumnCenter" text="Số Ghế Dọc" />
+            <TableColumn fx:id="clSoGheNgang" prefWidth="173.0" styleClass="ColumnCenter" text="Số Ghế Ngang" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

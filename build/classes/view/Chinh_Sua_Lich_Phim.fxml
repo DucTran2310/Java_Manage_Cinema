@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="acpChinhSuaLichPhim" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="729.0" prefWidth="864.0" style="-fx-background-color: #2d2d2d;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ChinhSuaLichPhimController">
+   <children>
+      <ImageView fitHeight="44.0" fitWidth="50.0" layoutX="22.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/list_film.png" />
+         </image>
+      </ImageView>
+      <Line endX="753.0000610351562" endY="-3.0517578125E-5" layoutX="111.0" layoutY="96.0" startX="-111.0" startY="-3.0517578125E-5" stroke="WHITE" />
+      <Label layoutX="126.0" layoutY="364.0" text="Ngày chiếu:" textFill="WHITE">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="150.0" layoutY="169.0" text="Tên phim:" textFill="WHITE">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="62.0" layoutY="280.0" text="Tên phòng chiếu:" textAlignment="RIGHT" textFill="WHITE">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="saveBtn" alignment="CENTER_RIGHT" layoutX="462.0" layoutY="641.0" onAction="#save" prefHeight="44.0" prefWidth="169.0" style="-fx-border-radius: 10px; -fx-background-color: #5CB85C;" styleClass="cursor_hand" stylesheets="@../alert/style.css" text="Lưu thông tin" textAlignment="RIGHT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="32.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/save-file-option.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="cancelBtn" alignment="CENTER_RIGHT" cancelButton="true" layoutX="639.0" layoutY="641.0" onAction="#cancel" prefHeight="44.0" prefWidth="114.0" style="-fx-border-radius: 10px; -fx-background-color: #ED4C67;" styleClass="cursor_hand" stylesheets="@../alert/style.css" text="Hủy bỏ" textAlignment="RIGHT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="26.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/trash.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXComboBox fx:id="tenPhimComboBox" focusColor="WHITE" layoutX="281.0" layoutY="169.0" onAction="#comboAction" prefHeight="32.0" prefWidth="350.0" unFocusColor="#fffdfd" />
+      <JFXComboBox fx:id="tenPhongComboBox" focusColor="WHITE" layoutX="281.0" layoutY="280.0" prefHeight="32.0" prefWidth="350.0" unFocusColor="WHITE" />
+      <DatePicker fx:id="dateStartPicker" layoutX="281.0" layoutY="364.0" prefHeight="37.0" prefWidth="350.0" style="-fx-cursor: hand;" />
+      <Label fx:id="themHoacChinhSuaLabel" layoutX="75.0" layoutY="30.0" prefHeight="40.0" prefWidth="289.0" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="51.0" layoutY="461.0" text="Thời Gian Bắt Đầu:" textFill="WHITE">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="43.0" layoutY="537.0" text="Thời Gian Kết Thúc:" textFill="WHITE">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <JFXTimePicker fx:id="tfTimeStart" defaultColor="#da1818" layoutX="281.0" layoutY="464.0" prefHeight="32.0" prefWidth="350.0" />
+      <JFXTimePicker fx:id="tfTimeEnd" defaultColor="#f51b10" layoutX="281.0" layoutY="543.0" prefHeight="32.0" prefWidth="350.0" />
+   </children>
+</AnchorPane>

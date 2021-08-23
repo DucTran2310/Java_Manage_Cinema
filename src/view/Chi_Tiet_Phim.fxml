@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="acpChiTietPhim" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="729.0" prefWidth="864.0" style="-fx-background-color: #2d2d2d;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ChiTietPhimcontroller">
+   <children>
+      <Label layoutX="630.0" layoutY="383.0" text="Thời lượng" textFill="#ffc312">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imageFilm" fitHeight="600.0" fitWidth="375.0" layoutX="10.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="nameFilmLabel" layoutX="409.0" layoutY="59.0" prefHeight="78.0" prefWidth="407.0" textFill="#f79f1f" wrapText="true">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Label fx:id="inforFilmLabel" alignment="TOP_LEFT" layoutX="409.0" layoutY="196.0" lineSpacing="2.0" prefHeight="163.0" prefWidth="447.0" textAlignment="JUSTIFY" textFill="#f79f1f" wrapText="true">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="436.0" layoutY="383.0" text="Khởi chiếu" textFill="#ffc312">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="16.0" fitWidth="17.0" layoutX="411.0" layoutY="388.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/time.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="18.0" fitWidth="18.0" layoutX="604.0" layoutY="388.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/clock.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="timeStartLabel" layoutX="436.0" layoutY="419.0" prefHeight="27.0" prefWidth="133.0" textFill="#ffc312">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="timeFilmLabel" layoutX="630.0" layoutY="419.0" prefHeight="28.0" prefWidth="152.0" textFill="#ffc312">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="410.0" layoutY="152.0" prefHeight="26.0" prefWidth="51.0" style="-fx-background-color: #F79F1F; -fx-border-radius: 6px; -fx-background-radius: 6px;" text="2D" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="411.0" layoutY="543.0" prefHeight="45.0" prefWidth="194.0" text="2D phụ đề Việt" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="409.0" layoutY="461.0" text="CGV Vincom Thủ Đức" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="410.0" layoutY="488.0" prefHeight="52.0" prefWidth="447.0" text="216 Võ Văn Ngân, Bình Thọ, Thủ Đức TP Hồ Chí Minh" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="backIcon" fitHeight="34.0" fitWidth="28.0" layoutX="822.0" layoutY="14.0" onMouseClicked="#back" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+         <image>
+            <Image url="@../image/back%20(1).png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnDatVe" layoutX="757.0" layoutY="668.0" onAction="#clickDatVe" style="-fx-background-color: #B53471;" styleClass="cursor_hand" stylesheets="@../alert/style.css" text="Đặt Vé" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

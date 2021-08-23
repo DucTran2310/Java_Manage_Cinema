@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="acpChinhSuaNhanVien" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="729.0" prefWidth="864.0" style="-fx-background-color: #2d2d2d;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ChinhSuaNhanVienController">
+   <children>
+      <ImageView fitHeight="40.0" fitWidth="46.0" layoutX="24.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/staff.png" />
+         </image>
+      </ImageView>
+      <Line endX="763.0" layoutX="101.0" layoutY="85.0" startX="-100.0" stroke="WHITE" />
+      <JFXButton fx:id="saveBtn" alignment="CENTER_RIGHT" layoutX="528.0" layoutY="665.0" onAction="#save" prefHeight="40.0" prefWidth="171.0" style="-fx-border-radius: 10px; -fx-background-color: #5CB85C;" styleClass="cursor_hand" stylesheets="@../alert/style.css" text="Lưu thông tin" textAlignment="RIGHT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="24.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/save-file-option.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="cancelBtn" alignment="CENTER_RIGHT" layoutX="713.0" layoutY="665.0" onAction="#cancel" prefHeight="40.0" prefWidth="119.0" style="-fx-border-radius: 10px; -fx-background-color: red;" styleClass="cursor_hand" stylesheets="@../alert/style.css" text="Hủy bỏ" textAlignment="RIGHT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/trash.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <Label fx:id="themHoacChinhSuaLabel" layoutX="68.0" layoutY="32.0" prefHeight="40.0" prefWidth="318.0" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="174.0" layoutY="294.0" text="Số điện thoại" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="251.0" layoutY="226.0" text="Email" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="233.0" layoutY="373.0" prefHeight="32.0" prefWidth="71.0" text="Địa chỉ" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="222.0" layoutY="444.0" text="Giới tính" textAlignment="RIGHT" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="newUserFullName" layoutX="332.0" layoutY="147.0" prefHeight="40.0" prefWidth="306.0" style="-fx-focus-traversable: true;" />
+      <TextField fx:id="newUserEmail" layoutX="332.0" layoutY="218.0" prefHeight="40.0" prefWidth="306.0" />
+      <TextField fx:id="newUserPhone" layoutX="332.0" layoutY="290.0" prefHeight="40.0" prefWidth="306.0" />
+      <TextField fx:id="newUserAdress" layoutX="332.0" layoutY="365.0" prefHeight="40.0" prefWidth="306.0" />
+      <JFXComboBox fx:id="newUserRole" focusColor="#34495e" layoutX="332.0" layoutY="518.0" prefHeight="40.0" prefWidth="306.0" unFocusColor="#34495e" />
+      <Label layoutX="224.0" layoutY="527.0" text="Chức vụ" textAlignment="RIGHT" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="235.0" layoutY="155.0" text="Họ tên" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER_LEFT" layoutX="332.0" layoutY="435.0" prefHeight="48.0" prefWidth="306.0" spacing="30.0">
+         <children>
+            <RadioButton fx:id="newUserMale" alignment="CENTER_LEFT" mnemonicParsing="false" selected="true" text="Nam" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="group" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="newUserFemale" alignment="CENTER_LEFT" mnemonicParsing="false" text="Nữ" textFill="WHITE" toggleGroup="$group">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </RadioButton>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

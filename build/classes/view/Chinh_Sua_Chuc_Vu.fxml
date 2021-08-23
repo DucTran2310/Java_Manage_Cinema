@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="acpChinhSuaChucVu" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="729.0" prefWidth="864.0" style="-fx-background-color: #2d2d2d;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ChinhSuaChucVucontroller">
+   <children>
+      <ImageView fitHeight="37.0" fitWidth="44.0" layoutX="27.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Phan_quyen.png" />
+         </image>
+      </ImageView>
+      <Line endX="752.9999389648438" layoutX="111.0" layoutY="95.0" startX="-111.0" stroke="WHITE" />
+      <Label layoutX="187.0" layoutY="303.0" text="Mô tả:" textFill="WHITE">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="115.0" layoutY="211.0" text="Tên chức vụ:" textFill="WHITE">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <TextField fx:id="newPositionName" layoutX="281.0" layoutY="215.0" prefHeight="37.0" prefWidth="455.0" />
+      <TextArea fx:id="describePosition" layoutX="281.0" layoutY="303.0" prefHeight="253.0" prefWidth="455.0" />
+      <JFXButton fx:id="saveBtn" alignment="CENTER_RIGHT" layoutX="507.0" layoutY="614.0" onAction="#save" prefHeight="40.0" prefWidth="170.0" style="-fx-border-radius: 10px; -fx-background-color: #5CB85C;" styleClass="cursor_hand" stylesheets="@../alert/style.css" text="Lưu thông tin" textAlignment="RIGHT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="28.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/save-file-option.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <Label fx:id="themHoacChinhSuaLabel" layoutX="77.0" layoutY="33.0" prefHeight="37.0" prefWidth="326.0" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="cancelBtn" layoutX="684.0" layoutY="614.0" onAction="#cancel" prefHeight="40.0" prefWidth="112.0" style="-fx-background-color: red;" styleClass="cursor_hand" stylesheets="@../alert/style.css" text="Hủy bỏ" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="29.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/delete.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <Label layoutX="92.0" layoutY="141.0" text="Tên nhân viên:" textFill="WHITE">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="tenNVComBoBox" layoutX="281.0" layoutY="136.0" prefHeight="37.0" prefWidth="455.0" />
+   </children>
+</AnchorPane>
